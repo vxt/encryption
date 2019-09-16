@@ -18,7 +18,6 @@ import struct
 import argon2 #argon2_cffi
 from Crypto.Cipher import ChaCha20_Poly1305  #pycryptodome
 
-
 def decrypt(src, dst, password:str):
     with open(src, 'rb') as rf, open(dst, 'wb') as wf:
         tag = rf.read(16)
