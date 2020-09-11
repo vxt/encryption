@@ -6,6 +6,7 @@ TAG : uint8[16]
 ## ChaCha20_Poly1305 additional_data : NONCE
 """
 
+import io
 import struct
 from Crypto.Cipher import ChaCha20, ChaCha20_Poly1305  #pycryptodome
 
